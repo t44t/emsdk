@@ -1,0 +1,29 @@
+WHILE TRUE
+
+IF CHKIMG("いいね.bmp")
+BTN(LEFT, CLICK, G_IMG_X+100, G_IMG_Y+15, 400)
+SLEEP(0.3)
+
+elseIF CHKIMG("利用上限.bmp")
+EXITEXIT
+
+elseIF CHKIMG("利用上限1.bmp")
+EXITEXIT
+
+elseIF CHKIMG("利用上限2.bmp")
+EXITEXIT
+
+elseIF CHKIMG("利用上限3.bmp")
+EXITEXIT
+
+elseIF CHKIMG("利用上限4.bmp")
+EXITEXIT
+
+else
+
+KBD(VK_NEXT,CLICK,1500)
+SLEEP(5)
+
+ENDIF
+
+WEND
